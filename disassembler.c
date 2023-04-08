@@ -183,7 +183,7 @@ unsigned int disassemble(unsigned char *bytes, unsigned int max, int offset, cha
 		{ 0, 0, "sahf", 0 }, // 9E
 		{ 0, 0, "lahf", 0 }, // 9F
 		{ 0, 0, "mov al,ds:", 1, IMM8 }, // A0
-		{ 0, 0, "mov eax,ds:", 1, IMM8 }, // A1
+		{ 0, 0, "mov eax,ds:", 1, IMM32 }, // A1
 		{ 0, 0, "mov ds:", 2, IMM8, AL }, // A2
 		{ 0, 0, "mov ds:", 2, IMM32, EAX }, // A3
 		{ 0, 0, "movs BYTE PTR es:[edi],BYTE PTR ds:[esi]", 0 }, // A4
